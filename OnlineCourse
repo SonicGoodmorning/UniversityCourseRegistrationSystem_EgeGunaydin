@@ -1,0 +1,9 @@
+public class OnlineCourse extends Course{
+    double technologyFee;
+
+    public double calculateTution(){return credits * tuitionPerCredit + technologyFee;}
+
+    public void displayInfo(){System.out.println(courseCode+ 
+    "\n" + title + "\n" + credits + "\n" + tuitionPerCredit + technologyFee);}
+
+}
