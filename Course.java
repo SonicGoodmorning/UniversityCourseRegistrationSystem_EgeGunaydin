@@ -15,7 +15,7 @@ public class Course{
     public String getTitle(){return title;}
     public int getCredits(){return credits;}
     public double getTuitionPerCredit(){return tuitionPerCredit;}
-    public double calculateTution(){return credits*tuitionPerCredit;}
+    public double calculateTuition(){return credits*tuitionPerCredit;}
 
     public void displayInfo(){System.out.println(courseCode+ 
     "\n" + title + "\n" + credits + "\n" + tuitionPerCredit);}
