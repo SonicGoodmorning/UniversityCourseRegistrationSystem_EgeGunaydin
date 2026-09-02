@@ -20,6 +20,4 @@ public class Course{
     public void displayInfo(){System.out.println(courseCode+ 
     "\n" + title + "\n" + credits + "\n" + tuitionPerCredit);}
 
-    
-
 }
