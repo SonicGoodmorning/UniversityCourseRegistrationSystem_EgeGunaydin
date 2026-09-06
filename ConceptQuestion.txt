@@ -1,14 +1,18 @@
 1. Identify one example of inheritance in your program.
+    The courses which extend Course.java, inherit its methods and values.
 
 2. Identify two methods that demonstrate method overriding.
+    calculateTuition(), displayInfo()
 
 3. Why can Course[] store OnlineCourse, LabCourse, and IndependentStudy objects?
+    Since it was declared a Course object type, which is what OnlineCourse, LabCourse, and IndependentStudy are the same type of.
 
 4. When the following statement executes, how does Java determine which calculateTuition() method
 to call?
+    Since the method is overrideded, and the object type is specified, depending on the object type the compiler will call that method instead.
 
 courses[i].calculateTuition();
 
 5. Why would using a long if/else statement with instanceof be a poorer design than using
 polymorphism in this program?
-    
+    It would be highly impractically, take longer to implement, and would be horribly modular.
