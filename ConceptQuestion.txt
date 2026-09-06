@@ -1,3 +1,5 @@
+Ege Gunaydin
+
 1. Identify one example of inheritance in your program.
     The courses which extend Course.java, inherit its methods and values.
 
