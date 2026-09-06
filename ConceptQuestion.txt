@@ -9,10 +9,10 @@
 
 4. When the following statement executes, how does Java determine which calculateTuition() method
 to call?
-    Since the method is overrideded, and the object type is specified, depending on the object type the compiler will call that method instead.
+    Since the method is overrideded, the compiler looks at the actual object and calls that method instead.
 
 courses[i].calculateTuition();
 
 5. Why would using a long if/else statement with instanceof be a poorer design than using
 polymorphism in this program?
-    It would be highly impractically, take longer to implement, and would be horribly modular.
+    It would be highly impractically, would struggle to even properly work in most cases without absurd cases, take longer to implement, and would be horribly modular.

@@ -9,8 +9,14 @@ public class LabCourse extends Course{
     @Override
     public double calculateTuition() {return credits * tuitionPerCredit + labFee;}
 
-    public void displayInfo(){System.out.println(courseCode+ 
-    "\n" + title + "\n" + credits + "\n" + tuitionPerCredit + "\n" + labFee);}
+    @Override
+    public void displayInfo(){
+        System.out.println(courseCode + " - " + title);
+        System.out.println("Type: Lab Course");
+        System.out.println("Credits: " + credits);
+        System.out.println("Lab Fee: " + labFee);
+        System.out.println("Tuition: " + calculateTuition());
+    }
 
     @Override
     public int getWeeklyHours() {return credits + 2;}

@@ -36,7 +36,7 @@ public class Student {
     }
 
     public void displaySchedule(){
-        System.out.print("Student: " + this.name);
+        System.out.println("Student: " + this.name);
         int c = 0;
         for(int i = 0; i < courseCount; i++){
             courses[i].displayInfo();

@@ -17,8 +17,11 @@ public class Course{
     public double getTuitionPerCredit(){return tuitionPerCredit;}
     public double calculateTuition(){return credits*tuitionPerCredit;}
 
-    public void displayInfo(){System.out.println(courseCode+ 
-    "\n" + title + "\n" + credits + "\n" + tuitionPerCredit);}
+    public void displayInfo(){
+        System.out.println(courseCode + " - " + title);
+        System.out.println("Credits: " + credits);
+        System.out.println("Tuition: " + calculateTuition());
+    }
 
     public int getWeeklyHours(){
         return credits;

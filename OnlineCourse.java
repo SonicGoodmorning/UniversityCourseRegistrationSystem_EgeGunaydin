@@ -11,9 +11,15 @@ public class OnlineCourse extends Course{
     public double calculateTuition(){return credits * tuitionPerCredit + technologyFee;}
 
     @Override
-    public void displayInfo(){System.out.println(courseCode+ 
-    "\n" + title + "\n" + credits + "\n" + tuitionPerCredit + technologyFee);}
+    public void displayInfo(){
+        System.out.println(courseCode + " - " + title);
+        System.out.println("Type: Online Course");
+        System.out.println("Credits: " + credits);
+        System.out.println("Technology Fee: " + technologyFee);
+        System.out.println("Tuition: " + calculateTuition());
+    }
 
+    @Override
     public int getWeeklyHours(){return credits;}
 
 }
