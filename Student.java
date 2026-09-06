@@ -19,7 +19,7 @@ public class Student {
         }
     }
 
-    public double calculateTuition(){
+    public double calculateTotalTuition(){
         double t = 0;
         for(int i = 0; i < courseCount; i++){
             t += courses[i].calculateTuition();
@@ -28,7 +28,7 @@ public class Student {
     }
 
     public int calculateWeeklyWorkload(){
-        int hours = 0;;
+        int hours = 0;
         for(int i = 0; i<courseCount; i++){
             hours += courses[i].getWeeklyHours();
         }
@@ -44,8 +44,7 @@ public class Student {
             c += courses[i].getCredits();
         }
         System.out.println("Total Credits: " + c);
-        System.out.println("Total Tuition: ");
-        System.out.println("Total Tuition: " + calculateTuition());
+        System.out.println("Total Tuition: " + calculateTotalTuition());
 
         System.out.println("Total Weekly Workload: " + calculateWeeklyWorkload() + " hours");
     }
