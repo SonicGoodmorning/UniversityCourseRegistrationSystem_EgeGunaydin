@@ -20,4 +20,14 @@ public class Course{
     public void displayInfo(){System.out.println(courseCode+ 
     "\n" + title + "\n" + credits + "\n" + tuitionPerCredit);}
 
+    public int getWeeklyHours(){
+        if (this instanceof OnlineCourse) {
+            return credits;
+        } else if (this instanceof LabCourse) {
+            return credits + 2;
+        } else if (this instanceof IndependentStudy) {
+            return credits * 2;
+        }
+        return credits;
+    }
 }

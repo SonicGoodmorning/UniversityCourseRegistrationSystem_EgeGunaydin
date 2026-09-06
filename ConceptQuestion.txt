@@ -1,0 +1,14 @@
+1. Identify one example of inheritance in your program.
+
+2. Identify two methods that demonstrate method overriding.
+
+3. Why can Course[] store OnlineCourse, LabCourse, and IndependentStudy objects?
+
+4. When the following statement executes, how does Java determine which calculateTuition() method
+to call?
+
+courses[i].calculateTuition();
+
+5. Why would using a long if/else statement with instanceof be a poorer design than using
+polymorphism in this program?
+    

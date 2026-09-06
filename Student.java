@@ -9,7 +9,7 @@ public class Student {
         courseCount = 0;
     }
 
-
+    
 
     public void addCourse(Course c){
         if(courseCount >= courses.length){System.out.println("Can't have more than 5 Courses");}
