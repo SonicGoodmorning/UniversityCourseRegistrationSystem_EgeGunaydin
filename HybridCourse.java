@@ -13,7 +13,13 @@ public class HybridCourse extends Course{
     public double calculateTuition(){return credits * tuitionPerCredit + technologyFee + campusFee;}
 
     @Override
-    public void displayInfo(){System.out.println(courseCode+ 
-    "\n" + title + "\n" + credits + "\n" + tuitionPerCredit + "\n" + technologyFee + "\n" + campusFee);}
+    public void displayInfo(){
+        System.out.println(courseCode + " - " + title);
+        System.out.println("Type: Hybrid Course");
+        System.out.println("Credits: " + credits);
+        System.out.println("Technology Fee: " + technologyFee);
+        System.out.println("Campus Fee: " + campusFee);
+        System.out.println("Tuition: " + calculateTuition());
+    }
 
 }
