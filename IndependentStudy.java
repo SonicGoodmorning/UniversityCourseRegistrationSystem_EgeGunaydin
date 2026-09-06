@@ -8,6 +8,10 @@ public class IndependentStudy extends Course {
     @Override
     public double calculateTuition() {return credits*tuitionPerCredit+supervisionFee;}
     
+    @Override 
     public void displayInfo(){System.out.println(courseCode+ 
     "\n" + title + "\n" + credits + "\n" + tuitionPerCredit + "\n" + supervisionFee);}
+
+    @Override 
+    public int getWeeklyHours() {return credits*2;}
 }

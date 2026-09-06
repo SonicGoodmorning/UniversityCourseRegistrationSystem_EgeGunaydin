@@ -19,22 +19,34 @@ public class Student {
         }
     }
 
-    public void calculateTuition(){
+    public double calculateTuition(){
+        double t = 0;
         for(int i = 0; i < courseCount; i++){
-            System.out.println("Course: " + courses[i].getCourseCode() + " Tuition: " + courses[i].calculateTuition());
+            t += courses[i].calculateTuition();
         }
+        return t;
+    }
+
+    public int calculateWeeklyWorkload(){
+        int hours = 0;;
+        for(int i = 0; i<courseCount; i++){
+            hours += courses[i].getWeeklyHours();
+        }
+        return hours;
     }
 
     public void displaySchedule(){
-        System.out.print(this.name);
+        System.out.print("Student: " + this.name);
         int c = 0;
         for(int i = 0; i < courseCount; i++){
+            courses[i].displayInfo();
+            System.out.println();
             c += courses[i].getCredits();
         }
-        System.out.println("Credits: " + c);
-        System.out.println("Tuition: ");
-        calculateTuition();
+        System.out.println("Total Credits: " + c);
+        System.out.println("Total Tuition: ");
+        System.out.println("Total Tuition: " + calculateTuition());
+
+        System.out.println("Total Weekly Workload: " + calculateWeeklyWorkload() + " hours");
     }
-
-
 }

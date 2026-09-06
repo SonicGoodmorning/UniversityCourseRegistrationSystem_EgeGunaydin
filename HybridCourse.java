@@ -1,8 +1,8 @@
-public class OnlineCourse extends Course{
+public class HybridCourse extends Course{
     double technologyFee;
 
 
-    public OnlineCourse(String cc,String t, int c, double tpc,double tf){
+    public HybridCourse(String cc,String t, int c, double tpc,double tf){
         super(cc, t, c, tpc);
         this.technologyFee = tf;
     }
@@ -13,7 +13,5 @@ public class OnlineCourse extends Course{
     @Override
     public void displayInfo(){System.out.println(courseCode+ 
     "\n" + title + "\n" + credits + "\n" + tuitionPerCredit + technologyFee);}
-
-    public int getWeeklyHours(){return credits;}
 
 }

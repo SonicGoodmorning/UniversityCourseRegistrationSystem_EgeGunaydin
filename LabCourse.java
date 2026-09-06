@@ -12,4 +12,6 @@ public class LabCourse extends Course{
     public void displayInfo(){System.out.println(courseCode+ 
     "\n" + title + "\n" + credits + "\n" + tuitionPerCredit + "\n" + labFee);}
 
+    @Override
+    public int getWeeklyHours() {return credits + 2;}
 }
